@@ -16,9 +16,28 @@
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "isolatedModules": true,
+    "isolatedModules": false,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": "./",
+    "paths": {
+      "@assets": [ "src/assets"],
+      "@assets/*": [ "src/assets/*"],
+      "@components": [ "src/components"],
+      "@components/*": [ "src/components/*"],
+      "@pages": [ "src/pages"],
+      "@pages/*": [ "src/pages/*"],
+      "@stores": [ "src/stores"],
+      "@stores/*": [ "src/stores/*"],
+      "@utils": [ "src/utils"],
+      "@utils/*": [ "src/utils/*"],
+      "@types": [ "src/types"],
+      "@types/*": [ "src/types/*"],
+      "@app": [ "src/app"],
+      "@app/*": [ "src/app/*"],
+      "@api": [ "src/api"],
+      "@api/*": [ "src/api/*"]
+    }
   },
   "include": [
     "src"
