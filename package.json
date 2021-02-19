@@ -47,6 +47,7 @@
     "fs-extra": "^9.0.1",
     "history": "4.10.1",
     "html-webpack-plugin": "4.5.0",
+    "husky": "^5.0.9",
     "identity-obj-proxy": "3.0.0",
     "jest": "26.6.0",
     "jest-circus": "26.6.0",
@@ -178,9 +179,8 @@
     }
   },
   "lint-staged": {
-      "*.{js,ts,tsx}": [
-        "eslint --fix"
-      ]
+    "*.{js,ts,tsx}": [
+      "eslint --fix"
+    ]
   }
-
 }
