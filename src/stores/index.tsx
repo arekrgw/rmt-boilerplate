@@ -1,19 +1,11 @@
-import rootStore, { RootStore } from '@stores/rootStore';
+import rootStore from '@stores/rootStore';
 import * as React from 'react';
 
-interface StoreType {
-  rootStore: RootStore;
-}
-
-const stores: StoreType = {
-  rootStore,
-};
-
-const StoreContext = React.createContext<StoreType>(stores);
+const StoreContext = React.createContext(rootStore);
 
 export const StoreProvider: React.FC = ({ children }) => {
   return (
-    <StoreContext.Provider value={stores}>{children}</StoreContext.Provider>
+    <StoreContext.Provider value={rootStore}>{children}</StoreContext.Provider>
   );
 };
 
